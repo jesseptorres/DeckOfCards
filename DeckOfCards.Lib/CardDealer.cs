@@ -5,12 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 using DeckOfCards.Models;
 
-namespace DeckOfCards
+namespace DeckOfCards.Lib
 {
     /// <summary>
     /// Card dealer class
     /// </summary>
-    public class CardDealer
+    public class CardDealer : ICardDealer
     {
         private List<Card> _cards = new List<Card>();
         private IEnumerator<Card> _cardsEnumerator;

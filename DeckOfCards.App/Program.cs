@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DeckOfCards.Lib;
 
-namespace DeckOfCards
+namespace DeckOfCards.App
 {
     class Program
     {
@@ -12,14 +13,12 @@ namespace DeckOfCards
         {
             var cardDealer = new CardDealer();
                         
-            ShuffleAndDealCards(cardDealer);
-            
-            ShuffleAndDealCards(cardDealer);
+            ShuffleAndDealCards(cardDealer);            
 
             Console.Read();
         }
 
-        private static void ShuffleAndDealCards(CardDealer cardDealer) 
+        private static void ShuffleAndDealCards(ICardDealer cardDealer) 
         {
             cardDealer.Shuffle();
 
