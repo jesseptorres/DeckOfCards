@@ -35,8 +35,6 @@ namespace DeckOfCards.App
                     Console.WriteLine("No more cards to deal");
                 }
             }
-
-            Console.WriteLine("=========================================================");
         }
     }
 }
